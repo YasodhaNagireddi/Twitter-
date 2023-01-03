@@ -1,0 +1,95 @@
+
+//API 1
+//user registration 
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "username": "adam_richard",
+  "password": "richard_567",
+  "name": "Adam Richard",
+  "gender": "male"
+}
+
+###
+//API 2
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username":"JoeBiden",
+  "password":"biden@123"
+}
+
+###
+
+# Authentication Check
+GET http://localhost:3000/users/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjcyNzQxMDAyfQ.IFiAnXFN47WgJ8tdfgkbyR6Y3JTi93x0urBB1f9GrdY
+###
+
+
+# API - 3
+GET http://localhost:3000/user/tweets/feed/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjcyNzQxMDAyfQ.IFiAnXFN47WgJ8tdfgkbyR6Y3JTi93x0urBB1f9GrdY
+###
+
+# API - 4
+GET http://localhost:3000/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjcyNzQxMDAyfQ.IFiAnXFN47WgJ8tdfgkbyR6Y3JTi93x0urBB1f9GrdY
+###
+
+# API - 5
+GET http://localhost:3000/user/followers/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjcyNzQxMDAyfQ.IFiAnXFN47WgJ8tdfgkbyR6Y3JTi93x0urBB1f9GrdY
+###
+
+# API - 6
+GET http://localhost:3000/tweets/8/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjcyNzQxMDAyfQ.IFiAnXFN47WgJ8tdfgkbyR6Y3JTi93x0urBB1f9GrdY
+###
+
+# API - 7
+GET http://localhost:3000/tweets/7/likes/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjcyNzQxMDAyfQ.IFiAnXFN47WgJ8tdfgkbyR6Y3JTi93x0urBB1f9GrdY
+###
+
+# API - 8
+GET http://localhost:3000/tweets/8/replies/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjcyNzQxMDAyfQ.IFiAnXFN47WgJ8tdfgkbyR6Y3JTi93x0urBB1f9GrdY
+###
+
+
+# API - 9
+GET http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjcyNzQxMDAyfQ.IFiAnXFN47WgJ8tdfgkbyR6Y3JTi93x0urBB1f9GrdY
+###
+
+# API - 10
+POST http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjcyNzQxMDAyfQ.IFiAnXFN47WgJ8tdfgkbyR6Y3JTi93x0urBB1f9GrdY
+Content-Type: application/json
+
+{
+   "tweet": "Anoth Tweet from JOE BEIDEN"
+}
+###
+
+# API - 11
+DELETE http://localhost:3000/tweets/4/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjcyNzQxMDAyfQ.IFiAnXFN47WgJ8tdfgkbyR6Y3JTi93x0urBB1f9GrdY
+###
+
+
+GET http://localhost:3000/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjcyNzQxMDAyfQ.IFiAnXFN47WgJ8tdfgkbyR6Y3JTi93x0urBB1f9GrdY
+###
+
+
+GET http://localhost:3000/follower/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjcyNzQxMDAyfQ.IFiAnXFN47WgJ8tdfgkbyR6Y3JTi93x0urBB1f9GrdY
+###
+
+GET http://localhost:3000/replies/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjcyNzQxMDAyfQ.IFiAnXFN47WgJ8tdfgkbyR6Y3JTi93x0urBB1f9GrdY
+###
